@@ -1,15 +1,14 @@
 use AdventureWorks2012;
 
-/*Find out info of all the customers*/
+/*Find out all the customers from Sales.Customer table.*/
 
 
 
-/*Find out info of all the sales orders*/
+/*Find out all the sales orders from Sales.SalesOrderHeader table.*/
 
 
 
-/*Find out sales info about productID 843*/
-
+/*Find out sales details about productID 843*/
 
 
 
