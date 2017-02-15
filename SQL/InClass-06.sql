@@ -15,7 +15,7 @@ GROUP BY JobTitle
 HAVING Count(BusinessEntityID) > 1
 ORDER BY Count(BusinessEntityID) DESC;
 
-/*Activity 3. For each product, show its ProductID and Name (FROM the ProductionProduct table) and the location of its inventory (FROM the Product.Location table) and amount of inventory held at that location (FROM the Production.ProductInventory table).*/
+/*Activity 3. For each product, show its ProductID and Name (FROM the Production.Product table) and the location of its inventory (FROM the Production.Location table) and amount of inventory held at that location (FROM the Production.ProductInventory table).*/
 
 
 
