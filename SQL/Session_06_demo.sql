@@ -27,7 +27,6 @@ p.Name
 FROM sales.SalesOrderDetail as s Inner Join production.product as p
 on  s.ProductID=p.ProductID;
 
-
 /* IN PPT: without 'INNER JOIN'*/
 SELECT s.SalesOrderID,
 s.OrderQty,
@@ -51,7 +50,7 @@ on CR.CountryRegionCode = SP.CountryRegionCode
 ORDER BY S.Name;
 
 
-/*In PPT: Outer Join. Check out the bottom of the resuls. Compare the results with the results of INNER JOIN*/
+/*In PPT: Outer Join. Check out the bottom of the resulst. Compare the results with the results of INNER JOIN*/
 SELECT s.SalesOrderID,
 s.OrderQty,
 p.ProductID,
