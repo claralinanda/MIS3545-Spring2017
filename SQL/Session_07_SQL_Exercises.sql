@@ -36,6 +36,8 @@ USE AdventureWorks2012; /*Set current database*/
 
 
 /*6, Find out the average of the total dues of all the orders.*/
+/* tables: Sales.SalesOrderHeader*/
+
 
 
 
