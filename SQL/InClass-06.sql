@@ -15,10 +15,13 @@ GROUP BY JobTitle
 HAVING Count(BusinessEntityID) > 1
 ORDER BY Count(BusinessEntityID) DESC;
 
-/*Activity 3. For each product, show its ProductID and Name (FROM the Production.Product table) and the location of its inventory (FROM the Production.Location table) and amount of inventory held at that location (FROM the Production.ProductInventory table).*/
-
-
-
+/*Activity 3. For each product, show its ProductID and Name (FROM the ProductionProduct table) and the location of its inventory (FROM the Product.Location table) and amount of inventory held at that location (FROM the Production.ProductInventory table).*/
+SELECT pp.ProductID, pp.Name AS Product_Name,  PL.Name AS Location, i.Quantity
+FROM Production.Product AS  pp
+JOIN  Production.ProductInventory AS i
+ON pp.ProductID = i.ProductID
+JOIN Production.Location AS PL
+On PL.LocationID = I.LocationID;
 
 
 
@@ -26,6 +29,10 @@ ORDER BY Count(BusinessEntityID) DESC;
 To do this, first do an outer join between the Production.Product table and the Production.ProductModel table in such a way that the ID FROM the ProductModel table always shows, even if there is no product associate with it.  
 Then, add a WHERE clause to specify that the ProductID IS NULL 
 */
-
+SELECT m.ProductModelID, m.Name AS model_name,  p.ProductID,  p.Name AS product_name
+FROM Production.ProductModel AS m
+left outer join Production.Product AS p
+ON p.ProductModelID=m.ProductModelID
+WHERE p.ProductID is null;
 
 
