@@ -12,4 +12,4 @@ use AdventureWorksDW2012;
 
 /*total Amount of off-line sales in Massachusetts*/
 
-/*Sales Amount of Internet Sales in 1st quarter each year in each country*/
+/*Total Amount of Internet Sales in 1st quarter each year in each country*/
