@@ -15,7 +15,7 @@ install.packages('twitteR')
 library(twitteR)
 # Setup Twitter oauth to establish a connection. You may need to select 2 after running the following. Replace the four keys(Secrets) with your own keys(Secrets)
 setup_twitter_oauth('Consumer-Key', 'Consumer-Secret', 'Access-Token', 'Access-Token-Secret')
-# get the 1,500 most recent tweets mentioning 'babson':
+# get the 150 most recent tweets mentioning 'babson':
 babson.tweets <- searchTwitter('babson', n=150)
 ```
 
